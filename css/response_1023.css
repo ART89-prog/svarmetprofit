@@ -1,0 +1,22 @@
+@media print, (max-width: 1023px) {
+ 
+    :root {
+        --font_size: 18px;
+        --font_size_title: 32px;
+    }   
+
+    .modal {
+        padding: 60px 30px 30px;
+    }
+    .is-compact .fancybox__content>.f-button.is-close-btn {
+        top: 30px;
+        right: 30px;
+    }
+ 
+   
+
+
+    
+
+    
+}
