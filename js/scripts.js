@@ -149,7 +149,7 @@ $(() => {
 
 
   const newSliders = [],
-  new2 = document.querySelectorAll('.new .swiper')
+    new2 = document.querySelectorAll('.new .swiper')
 
   new2.forEach(function (el, i) {
     el.classList.add('new_s' + i)
@@ -192,6 +192,101 @@ $(() => {
     newSliders.push(new Swiper('.new_s' + i, options))
   })
 
+
+
+  // Инициализация превью слайдера
+  const sliderThumbs = new Swiper(".slider__thumbs .swiper-container", {
+    // ищем слайдер превью по селектору
+    // задаем параметры
+    direction: "vertical", // вертикальная прокрутка
+    slidesPerView: 3, // показывать по 3 превью
+    spaceBetween: 24, // расстояние между слайдами
+    navigation: {
+      // задаем кнопки навигации
+      nextEl: ".slider__next", // кнопка Next
+      prevEl: ".slider__prev" // кнопка Prev
+    },
+    freeMode: true, // при перетаскивании превью ведет себя как при скролле
+    breakpoints: {
+      // условия для разных размеров окна браузера
+      0: {
+        // при 0px и выше
+        direction: "horizontal" // горизонтальная прокрутка
+      },
+      768: {
+        // при 768px и выше
+        direction: "vertical" // вертикальная прокрутка
+      }
+    }
+  });
+  // Инициализация слайдера изображений
+  const sliderImages = new Swiper(".slider__images .swiper-container", {
+    // ищем слайдер превью по селектору
+    // задаем параметры
+    direction: "vertical", // вертикальная прокрутка
+    slidesPerView: 1, // показывать по 1 изображению
+    spaceBetween: 32, // расстояние между слайдами
+    mousewheel: true, // можно прокручивать изображения колёсиком мыши
+    navigation: {
+      // задаем кнопки навигации
+      nextEl: ".slider__next", // кнопка Next
+      prevEl: ".slider__prev" // кнопка Prev
+    },
+    grabCursor: true, // менять иконку курсора
+    thumbs: {
+      // указываем на превью слайдер
+      swiper: sliderThumbs // указываем имя превью слайдера
+    },
+    breakpoints: {
+      // условия для разных размеров окна браузера
+      0: {
+        // при 0px и выше
+        direction: "horizontal" // горизонтальная прокрутка
+      },
+      768: {
+        // при 768px и выше
+        direction: "vertical" // вертикальная прокрутка
+      }
+    }
+  });
+
+
+
+
+  // Табы
+  var locationHash = window.location.hash
+
+  $('body').on('click', '.tabs button', function (e) {
+    e.preventDefault()
+
+    if (!$(this).hasClass('active')) {
+      const $parent = $(this).closest('.tabs_container'),
+        activeTab = $(this).data('content'),
+        $activeTabContent = $(activeTab),
+        level = $(this).data('level')
+
+      $parent.find('.tabs:first button').removeClass('active')
+      $parent.find('.tab_content.' + level).removeClass('active')
+
+      $(this).addClass('active')
+      $activeTabContent.addClass('active')
+    }
+  })
+
+  if (locationHash && $('.tabs_container').length) {
+    const $activeTab = $('.tabs button[data-content=' + locationHash + ']'),
+      $activeTabContent = $(locationHash),
+      $parent = $activeTab.closest('.tabs_container'),
+      level = $activeTab.data('level')
+
+    $parent.find('.tabs:first button').removeClass('active')
+    $parent.find('.tab_content.' + level).removeClass('active')
+
+    $activeTab.addClass('active')
+    $activeTabContent.addClass('active')
+
+    $('html, body').stop().animate({ scrollTop: $activeTabContent.offset().top }, 1000)
+  }
 
 
 
