@@ -117,23 +117,23 @@ $(() => {
       slideVisibleClass: 'visible',
       breakpoints: {
         0: {
-          spaceBetween: 20,
+          spaceBetween: 0,
           slidesPerView: 1
         },
-        510: {
-          spaceBetween: 12,
+        670: {
+          spaceBetween: 15,
           slidesPerView: 2
         },
         768: {
-          spaceBetween: 12,
-          slidesPerView: 3
+          spaceBetween: 15,
+          slidesPerView: 2
         },
-        1024: {
-          spaceBetween: 24,
+        970: {
+          spaceBetween: 30,
           slidesPerView: 3
         },
         1300: {
-          spaceBetween: 24,
+          spaceBetween: 30,
           slidesPerView: 4
         }
       },
@@ -219,7 +219,7 @@ $(() => {
       if (!fakeResize2) {
         fakeResize2 = true
 
-        if (windowW < 375) document.getElementsByTagName('meta')['viewport'].content = 'width=375, user-scalable=no'
+        if (windowW < 390) document.getElementsByTagName('meta')['viewport'].content = 'width=390, user-scalable=no'
       } else {
         fakeResize = false
         fakeResize2 = true

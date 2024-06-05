@@ -258,7 +258,7 @@ img {
     width: 100%;
     height: 100%;
 
-    opacity: .65;
+    opacity: .3;
     background: #000;
 }
 
@@ -372,7 +372,7 @@ header .menu .item > a {
     font-size: var(--font_size);
     font-weight: 400;
     line-height: 1.2;    
-    color: var(--text_color);
+    color: #605959;
     position: relative;
     display: flex;
     transition: all .4s;
@@ -383,6 +383,12 @@ header .menu .item > a {
     flex-wrap: wrap;
     cursor: pointer;
     text-decoration: none;
+}
+header .menu .item:hover > a {
+    color: #005038;
+}
+header .menu .item:active > a {
+    color: #C2CDBD;
 }
 .header_phone {
     display: flex;
@@ -396,7 +402,10 @@ header .menu .item > a {
     color: var(--text_color);
     white-space: nowrap;
 }
-
+.header_phone img {
+    width: 18px;
+    height: 18px;
+}
 .block {
     margin-bottom: 150px;
 }
@@ -414,7 +423,7 @@ header .menu .item > a {
     margin-top: -15px;
 }
 .first-section_title {
-    font-family: Century Gothic;
+    font-family: "Century Gothic";
     font-size: 65px;
     font-weight: 700;
     line-height: 1.23;
@@ -439,7 +448,18 @@ header .menu .item > a {
     color: #ffff;
     display: flex;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;  
+    text-align: center;  
+    transition: all .4s ease;
+    border: 1px solid transparent;
+}
+.first-section_btn:hover {
+    background: #C2CDBD;
+}
+.first-section_btn:active {
+    background: #ffff;
+    border: 1px solid #005038;
+    color: #000;
 }
 .first-section_arrow {
     display: block;
@@ -448,6 +468,17 @@ header .menu .item > a {
     position: absolute;
     bottom: 0;
     left: 93px;
+    animation: arrowDown 2s infinite;
+}
+@keyframes arrowDown {
+  0% {
+    bottom: 30px;
+    opacity: 1;
+  }
+  100% {
+    bottom: 0px;
+    opacity: 0;
+  }
 }
 .first-section_img {
     margin-left: -200px;
@@ -458,12 +489,11 @@ header .menu .item > a {
 .advantages_items {
     display: flex;
     justify-content: space-between;
-    margin-left: -30px;
+    gap: 30px;
 }
 .advantages_items > * {
     text-align: center;
     width: calc(100%/4 - 30px);
-    margin-left: 30px;
 }
 .advantages_item_icon {
     margin: 0 auto 10px;
@@ -486,6 +516,14 @@ header .menu .item > a {
     text-align: center;
 }
 
+
+
+
+.sertificat_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
 
@@ -846,8 +884,13 @@ footer {
     color: #fff;
     margin-left: auto;
     margin-right: 58px;
+    transition: all .4s ease;
 }
-
+.footer_btn:hover {
+    background: #ffff;
+    border: 1px solid #005038;
+    color: #000;
+}
 
 
 

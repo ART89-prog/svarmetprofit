@@ -28,11 +28,12 @@
         padding: 37px 18px;
         transition: transform .3s linear;
         transform: translateX(100%);
-        background: #fff;
         justify-content: flex-start;
         align-items: flex-start;
         align-content: flex-start;
         flex-wrap: wrap;
+        background: #F9F9F9;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
     }
     header .menu.show {
         transform: translateX(0);
@@ -58,11 +59,12 @@
         color: #000;
         border-bottom: none;
     }    
-    .menu_open header {
-        background: #2A292F;
-    }
     header .close_btn {
         display: none;
+    }
+    .header_phone {
+        margin-right: auto;
+        margin-left: 15px;
     }
     .menu_open header .close_btn {
         display: block;
@@ -74,8 +76,60 @@
     header .menu {
         gap: 0px;
     }
+    .first-section_title {
+        font-size: 36px;
+    }
+    .first-section_img {
+        margin-left: -70px;
+    }
+    .first-section_arrow {
+        left: 35px;
+    }
+    .advantages_items {
+        flex-wrap: wrap;
+    }
+    .advantages_items > * {
+        width: calc(100% / 2 - 30px);
+    }
+    .service_item:nth-child(1), 
+    .service_item:nth-child(3) {
+        width: 250px;
+    }
+    .service_item-title {
+        font-size: 17px;
+        top: 15px;
+        left: 15px;
+    }
+    .partner_contact {
+        display: none;
+    }
+    .partner_text {
+        max-width: 100%;
+    }
+    .footer_logo {
+        width: 100%;
+        margin: 0 auto 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .footer_wrap {
+        flex-wrap: wrap;
+    }
+    .footer_contact {
+        flex-direction: column;
+    }
+    .footer_btn {
+        display: none;
+    }
+    .footer_info {
+        justify-content: space-between;
+        width: 100%;
+    }
 
- 
+    .footer_contact-desc img {
+        width: 13px;
+        height: 20px;
+    }
    
 
 

@@ -1,10 +1,24 @@
 @media (max-width: 479px) {
 
-    :root {
-        --font_size: 16px;
-        --font_size_title: 24px;
+    .partner_item {
+        width: 44%;
     }
-    
+    .partner_item img {
+        width: 100%;
+        height: auto;
+    }
+    .service_item {
+        height: 166px;
+    }
+    .header_logo {
+        width: 117px;
+    }
+    .header_logo img {
+        width: 100%;        
+    }
+    .advantages_items > * {
+        width: 100%;
+    }
 
 
 
