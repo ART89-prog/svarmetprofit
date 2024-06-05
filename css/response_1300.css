@@ -3,6 +3,9 @@
     :root {
         --font_size_title: 36px;
     }   
+    header .menu {
+        gap: 0px;
+    }
 
 
 

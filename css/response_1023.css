@@ -1,17 +1,77 @@
 @media print, (max-width: 1023px) {
  
-    :root {
+    /* :root {
         --font_size: 18px;
         --font_size_title: 32px;
-    }   
+    }    */
 
-    .modal {
-        padding: 60px 30px 30px;
+    header .mob_menu_btn {
+        display: flex;
+        order: 1;
     }
-    .is-compact .fancybox__content>.f-button.is-close-btn {
-        top: 30px;
-        right: 30px;
+    header {
+        padding: 37px 0;
     }
+    header .menu {
+        position: fixed;
+        z-index: 107;
+        top: 0px;
+        right: 0;
+        display: flex;
+        overflow: auto;
+        width: 360px;
+        height: 245px;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 37px 18px;
+        transition: transform .3s linear;
+        transform: translateX(100%);
+        background: #fff;
+        justify-content: flex-start;
+        align-items: flex-start;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+    header .menu.show {
+        transform: translateX(0);
+    }
+    header .close_btn {
+        display: flex;
+    }
+    .menu_open header .mob_menu_btn {
+        display: none;
+    }
+    header .menu .item {
+        width: 100%;
+        margin-right: 0;
+    }
+    header .menu .item + .item {
+        margin-left: 0;
+    }
+    header .menu .item > a {
+        display: block;
+        height: auto;
+        padding-bottom: 20px;
+        text-align: end;
+        color: #000;
+        border-bottom: none;
+    }    
+    .menu_open header {
+        background: #2A292F;
+    }
+    header .close_btn {
+        display: none;
+    }
+    .menu_open header .close_btn {
+        display: block;
+        top: -30px;
+        right: 5px;
+        position: absolute;
+        z-index: 999;
+    }
+
  
    
 
