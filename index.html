@@ -69,7 +69,7 @@
 								</div>												
 							</nav>		
 						
-							<a href="tel:+375 (29) 000-22-00" class="header_phone">
+							<a href="tel:+375290002200" class="header_phone">
 								<img src="images/phone.svg" alt="">
 								<span>+375 (29) 000-22-00</span>
 							</a>
@@ -90,7 +90,7 @@
 						<div class="first-section_info">
 							<div class="first-section_title">Изготовление <br>металлоконструкций</div>
 							<div class="first-section_text">Скидка 20% на первый заказ при стоимости выше 10 000 BYN</div>
-							<a href="" class="first-section_btn">Оставить заявку</a>
+							<a href="#" data-content="#modal" class="first-section_btn modal_link">Оставить заявку</a>
 						</div>
 						<a href="#advantages" class="first-section_arrow scroll">
 							<img src="images/arrow.svg" alt="">
@@ -475,7 +475,7 @@
 							</div>
 						</div>
 
-						<a href="#" class="footer_btn">Связаться с нами</a>						
+						<a href="#" class="footer_btn modal_link" data-content="modal">Связаться с нами</a>						
 					</div>
 				</div>
 			</footer>
@@ -490,36 +490,28 @@
 		</div>
 
 
-		<section class="modal" id="modal_callback" style="display: none;">
-			<div class="modal_title">7 секретов идеального газона</div>
-			<div class="modal_wrap">
-				<div class="modal_img">
-					<img src="images/form_img2.jpg" alt="">
+		<section class="modal" id="modal" style="display: none;">
+			<div class="modal_title">Запрос расчета</div>
+			<div class="modal_text">После заполнения формы, менеджер свяжется с Вами для уточнения деталей!</div>
+			<form>
+				<div class="line">
+					<div class="field">
+						<input type="text" placeholder="Ваше имя">
+					</div>
+				</div>		
+				<div class="line">
+					<div class="field">
+						<input type="tel" placeholder="+375 (__) - ___ - __ - __">
+					</div>
 				</div>
-				<div class="modal_info">
-					<div class="modal_info-title">Скачайте нашу бесплатную книгу, чтобы узнать:</div>
-					<ul>
-						<li>Как подготовить участок к газону</li>
-						<li>Какой бывает газон и как подобрать подходящий</li>
-						<li>Как правильно поливать газон</li>
-						<li>Секреты правельной стрижки газона</li>
-						<li>Удобрения и газон, как ненавредить</li>
-						<li>Как сохранить "изумрудный" газон на года</li>
-						<li>Как избежать появление проплешин и лечить их</li>
-					</ul>
-					<form>
-						<div class="line">
-							<div class="field">
-								<input type="text" placeholder="Ваше имя">
-							</div>
-							<div class="field">
-								<input type="tel" placeholder="Номер телефона">
-							</div>
-						</div>	
-						<button type="submit">Заказать</button>						
-					</form>
-				</div>
-			</div>
+				<button type="submit" data-content="#modal2" class="modal_link">Запросить расчет</button>						
+			</form>
+		</section>
+
+
+		<section class="modal2" id="modal2" style="display: none;">
+			<div class="modal_title">Благодарим за Ваше обращение!</div>
+			<div class="modal_text">Менеджер свяжется с вами в ближайшее время!</div>
 		</section>
 
 		

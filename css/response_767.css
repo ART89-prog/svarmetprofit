@@ -48,6 +48,17 @@
         left: 50%;
         transform: translateX(-50%);
         bottom: -300px;
+        animation: arrowDown 2s infinite;
+    }
+    @keyframes arrowDown {
+      0% {
+        bottom: -300px;
+        opacity: 1;
+      }
+      100% {
+        bottom: -330px;
+        opacity: 0;
+      }
     }
     .first-section_title {
         font-size: 30px;
