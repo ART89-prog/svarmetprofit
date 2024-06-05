@@ -1,7 +1,15 @@
 @media print, (max-width: 1470px) {
 
 
-
+    .first-section_img img {
+        width: 100%;
+    }
+    .first-section_img {
+        margin-left: -125px;
+    }
+    .first-section_title {
+        font-size: 50px;
+    }
 
 
 

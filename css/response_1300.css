@@ -4,9 +4,36 @@
         --font_size_title: 36px;
     }   
     header .menu {
-        gap: 0px;
+        gap: 30px;
     }
-
+    .service_item:nth-child(1),
+    .service_item:nth-child(3) {
+        width: 300px;
+    }
+    .partner_contact {
+        right: 20px;
+    }
+    .footer_logo {
+        margin-right: 30px;
+    } 
+    .footer_btn {
+        margin-right: 0;
+    }
+    .footer_contact {
+        gap: 30px;
+    }
+    .footer_menu {
+        margin-right: 30px;
+    }
+    .block {
+        margin-bottom: 80px;
+    }
+    .new {
+        margin-bottom: 80px;
+    }
+    .title {
+        margin-bottom: 30px;
+    }
 
 
 

@@ -66,10 +66,13 @@
     }
     .menu_open header .close_btn {
         display: block;
-        top: -30px;
-        right: 5px;
-        position: absolute;
+        top: 5px;
+        right: 0px;
+        position: fixed;
         z-index: 999;
+    }
+    header .menu {
+        gap: 0px;
     }
 
  

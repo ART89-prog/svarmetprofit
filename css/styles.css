@@ -368,11 +368,11 @@ header .menu .item {
     position: relative;
 }
 header .menu .item > a {
-    font-family: Montserrat;
-    font-size: 15px;
+    font-family: var(--font_family);
+    font-size: var(--font_size);
     font-weight: 400;
     line-height: 1.2;    
-    color: #000;
+    color: var(--text_color);
     position: relative;
     display: flex;
     transition: all .4s;
@@ -389,11 +389,11 @@ header .menu .item > a {
     align-items: center;
     gap: 10px;
     text-decoration: none;
-    font-family: Montserrat;
-    font-size: 15px;
+    font-family: var(--font_family);
+    font-size: var(--font_size);
     font-weight: 500;
     line-height: 1.2;
-    color: #000;
+    color: var(--text_color);
     white-space: nowrap;
 }
 
@@ -421,8 +421,8 @@ header .menu .item > a {
     margin-bottom: 20px;
 }
 .first-section_text {
-    font-family: Montserrat;
-    font-size: 15px;
+    font-family: var(--font_family);
+    font-size: var(--font_size);
     font-weight: 300;
     line-height: 1.2;
     margin-bottom: 25px;
@@ -431,7 +431,7 @@ header .menu .item > a {
     width: 250px;
     height: 65px;
     background: #005038;
-    font-family: Montserrat;
+    font-family: var(--font_family);
     font-size: 17px;
     font-weight: 600;
     line-height: 1.2;  
@@ -458,9 +458,12 @@ header .menu .item > a {
 .advantages_items {
     display: flex;
     justify-content: space-between;
+    margin-left: -30px;
 }
-.advantages_item {
+.advantages_items > * {
     text-align: center;
+    width: calc(100%/4 - 30px);
+    margin-left: 30px;
 }
 .advantages_item_icon {
     margin: 0 auto 10px;
@@ -468,7 +471,7 @@ header .menu .item > a {
     justify-content: center;
 }
 .advantages_item_title {
-    font-family: Montserrat;
+    font-family: var(--font_family);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -476,8 +479,8 @@ header .menu .item > a {
     margin-bottom: 10px;
 }
 .advantages_item_text {
-    font-family: Montserrat;
-    font-size: 15px;
+    font-family: var(--font_family);
+    font-size: var(--font_size);
     font-weight: 400;
     line-height: 1.2;
     text-align: center;
@@ -487,8 +490,8 @@ header .menu .item > a {
 
 
 .title {
-    font-family: Montserrat;
-    font-size: 40px;
+    font-family: var(--font_family);
+    font-size: var(--font_size_title);
     font-weight: 500;
     line-height: 1.2;
     margin-bottom: 50px;
@@ -539,14 +542,14 @@ header .menu .item > a {
     position: absolute;
     top: 30px;
     left: 25px;
-    font-family: Montserrat;
+    font-family: var(--font_family);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
     color: #F9F9F9;
 }
 .service_item-title {
-    font-family: Montserrat;
+    font-family: var(--font_family);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;    
@@ -598,8 +601,8 @@ header .menu .item > a {
     margin-bottom: 25px;
 }
 .partner_text {
-    font-family: Montserrat;
-    font-size: 15px;
+    font-family: var(--font_family);
+    font-size: var(--font_size);
     font-weight: 300;
     line-height: 1.2;   
     margin-bottom: 31px;  
@@ -630,7 +633,7 @@ header .menu .item > a {
     display: flex;
     align-items: center;
     gap: 10px;
-    font-family: Montserrat;
+    font-family: var(--font_family);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -639,8 +642,8 @@ header .menu .item > a {
     color: #fff;
 }
 .partner_contact-email {
-    font-family: Montserrat;
-    font-size: 15px;
+    font-family: var(--font_family);
+    font-size: var(--font_size);
     font-weight: 400;
     line-height: 1.2;
     text-decoration: none;
@@ -662,7 +665,7 @@ header .menu .item > a {
 .new_title a {
     margin-left: auto;
     display: block;
-    font-family: Montserrat;
+    font-family: var(--font_family);
     font-size: 14px;
     font-weight: 400;
     line-height: 1.2;
@@ -676,7 +679,10 @@ header .menu .item > a {
     z-index: 5;
     margin-bottom: 20px;
     text-decoration: none;
-    color: #000;
+    color: var(--text_color);
+}
+.new_item-img img {
+    width: 100%;
 }
 .new_item:hover:after {
     position: absolute;
@@ -699,7 +705,7 @@ header .menu .item > a {
     z-index: -10;
 }
 .new_item-title {
-    font-family: Montserrat;
+    font-family: var(--font_family);
     font-size: 14px;
     font-weight: 600;
     line-height: 1.2;
@@ -707,7 +713,7 @@ header .menu .item > a {
 }
 .new_item-text {
     margin-top: 10px;
-    font-family: Montserrat;
+    font-family: var(--font_family);
     font-size: 14px;
     font-weight: 300;
     line-height: 1.2;
@@ -719,13 +725,13 @@ header .menu .item > a {
     justify-content: space-between;
 }
 .new_item-date {
-    font-family: Montserrat;
+    font-family: var(--font_family);
     font-size: 14px;
     font-weight: 300;
     line-height: 1.2;
 }
 .new_item-btn {
-    font-family: Montserrat;
+    font-family: var(--font_family);
     font-size: 14px;
     font-weight: 300;
     line-height: 1.2;
@@ -769,8 +775,8 @@ footer {
 }
 .footer_menu ul li a {
     text-decoration: none;
-    font-family: Montserrat;
-    font-size: 15px;
+    font-family: var(--font_family);
+    font-size: var(--font_size);
     font-weight: 400;
     line-height: 1.2;
     color: #fff;
@@ -783,16 +789,16 @@ footer {
     gap: 83px;
 }
 .footer_contact-title {
-    font-family: Montserrat;
-    font-size: 15px;
+    font-family: var(--font_family);
+    font-size: var(--font_size);
     font-weight: 400;
     line-height: 1.2;
     margin-bottom: 13px;
     color: #fff;
 }
 .footer_contact-text {
-    font-family: Montserrat;
-    font-size: 15px;
+    font-family: var(--font_family);
+    font-size: var(--font_size);
     font-weight: 300;
     line-height: 1.2;
     color: #fff;
@@ -804,18 +810,19 @@ footer {
     display: flex;
     gap: 10px;
     margin-top: 11px;
-    font-family: Montserrat;
-    font-size: 15px;
+    font-family: var(--font_family);
+    font-size: var(--font_size);
     font-weight: 400;
     line-height: 1.2;
     color: #fff;
     text-decoration: none;
+    white-space: nowrap;
 }
 .footer_contact-desc {
     display: flex;
     gap: 10px;
-    font-family: Montserrat;
-    font-size: 15px;
+    font-family: var(--font_family);
+    font-size: var(--font_size);
     font-weight: 500;
     line-height: 1.2;
     color: #fff;
@@ -828,7 +835,7 @@ footer {
     height: 65px;
     background: #005038;
     border: 1px solid #F9F9F9;
-    font-family: Montserrat;
+    font-family: var(--font_family);
     font-size: 17px;
     font-weight: 600;
     line-height: 1.2;
@@ -843,122 +850,7 @@ footer {
 
 
 
-.callback_wrap {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-.callback_form {
-    width: calc(100% - 800px);
-}
-.callback_title {
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 120%;
-    color:  var(--bg2);
-    margin-bottom: 8px;
-}
-.callback_text {
-    margin-bottom: 10px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 25px;
-    color: #000000;
-}
-.callback .line {
-    width: 100%;
-    margin-bottom: 16px;
-}
-.callback .line .field {
-    width: 100%;
-}
-.callback .line .field input {
-    padding: 20px;
-    width: 100%;
-    height: 59px;
-    background: #F2FAF2;
-    border-radius: 6px;
-    border: none;
-    font-family: var(--font_family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 120%;
-    color: #000;
-}
-.callback .line .field input::-webkit-input-placeholder {
-    font-family: var(--font_family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 120%;
-    color: #2C332D;
-}
-.callback .line .field input::-moz-placeholder {
-    font-family: var(--font_family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 120%;
-    color: #2C332D;
-}
-.callback .line .field input:-moz-placeholder {
-    font-family: var(--font_family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 120%;
-    color: #2C332D;
-}
-.callback .line .field input:-ms-input-placeholder {
-    font-family: var(--font_family);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 120%;
-    color: #2C332D;
-}
-.checkbox {
-    display: flex;
-    align-items: center;
-}
-.form_agree-text {
-    font-family: var(--font_family);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 120%;
-    color: #000000;    
-}
-.form_agree-text a {
-    font-family: var(--font_family);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 120%;
-    color: rgb(11, 154, 11);  
-    text-decoration: none;    
-}
-.callback_img {
-    width: 788px;
-    height: 564px;
-}
-.callback_img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 12px;
-}
-.callback button {
-    width: 100%;
-    height: 69px;
-    background:  var(--bg2);
-    border-radius: 6px;
-    font-family: var(--font_family);
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 69px;
-    text-align: center;
-    color: #FFFFFF;
-    margin-top: 26px;
-    transition: all .4s;
-}
-.callback button:hover {
-    background: #056c05;
-}
+
 
 
 
