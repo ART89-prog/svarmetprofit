@@ -66,6 +66,7 @@ $(() => {
   })
 
 
+  Fancybox.bind('[data-fancybox="gallery"]', {});
   Fancybox.bind('[data-fancybox="gallery1"]', {});
   Fancybox.bind('[data-fancybox="gallery2"]', {});
   Fancybox.bind('[data-fancybox="gallery3"]', {});
