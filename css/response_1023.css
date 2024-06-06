@@ -190,6 +190,9 @@
     .contacts_item:nth-child(4) {
         margin-top: 25px;
     }
+    .contacts .map_wrap {
+        height: 250px;
+    }
 
 
     
