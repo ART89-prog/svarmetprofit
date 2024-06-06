@@ -1,7 +1,17 @@
 @media print, (max-width: 1187px) {
 
 
-
+    .about_wrap {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .about_info {
+        width: 100%;
+    }
+    .about_items {
+        width: 100%;
+        column-gap: 30px;
+    }
   
    
 

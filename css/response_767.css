@@ -129,10 +129,35 @@
     .slider .tabs {
         margin-bottom: 20px;
     }
-    .stage_items > * {
+        .stage_items > * {
         width: 100%;
     }
-
+    .about_items {
+        gap: 30px;
+    }
+    .about_item:nth-child(2n+1) {
+        margin-bottom: 0px;
+        display: flex;
+        justify-content: end;
+    }
+    .about_item:nth-child(2n) {
+        margin-top: 0px;
+        margin-bottom: 0;
+    }
+    .about_item:nth-child(2) {
+        margin-top: 0px;
+    }
+    .about_item:nth-child(3) {
+        margin-top: 0px;
+    }
+    .about_item-img {
+        width: 100%;
+        height: 100%;
+    }
+    .about_item-img img {
+        width: 100%;
+        height: 100%;
+    }
 
 
 
