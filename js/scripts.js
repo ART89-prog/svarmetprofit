@@ -66,7 +66,11 @@ $(() => {
   })
 
 
-  Fancybox.bind('[data-fancybox="gallery"]', {});
+  Fancybox.bind('[data-fancybox="gallery1"]', {});
+  Fancybox.bind('[data-fancybox="gallery2"]', {});
+  Fancybox.bind('[data-fancybox="gallery3"]', {});
+  Fancybox.bind('[data-fancybox="gallery4"]', {});
+  Fancybox.bind('[data-fancybox="gallery5"]', {});
 
   // Fancybox
   Fancybox.defaults.autoFocus = false
