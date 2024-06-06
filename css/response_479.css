@@ -25,7 +25,19 @@
     .stage_items {
         justify-content: center;
     }
-
+    .about_items > * {
+        width: 100%;
+    }
+    .about_items {
+        gap: 20px;
+    }
+    .work .tabs button {
+        width: 235px;
+    }
+    .contacts_item:nth-child(2) {
+        width: 100%;
+        margin-top: 25px;
+    }
 
 
 

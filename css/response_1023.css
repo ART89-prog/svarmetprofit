@@ -170,6 +170,26 @@
     .stage_items > * {
         width: calc(100%/2 - 15px);
     }
+    .work .tab_content {
+        gap: 20px;
+    }
+    .work .work_img {
+        cursor: pointer;
+        width: calc(100% / 3 - 14px);
+    }
+    .contacts_item:nth-child(3) {
+        width: 100%;
+        margin-top: 25px;
+    }
+    .contacts_item:nth-child(1) {
+        margin-right: 50px;
+    }
+    .contacts_item:nth-child(2) {
+        margin-right: 0px;
+    }
+    .contacts_item:nth-child(4) {
+        margin-top: 25px;
+    }
 
 
     

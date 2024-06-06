@@ -158,6 +158,16 @@
         width: 100%;
         height: 100%;
     }
+    .about_items > * {
+        width: calc(100% / 2 - 15px);
+    }
+    .work .tabs button {
+        width: 420px;
+    }
+    .work .work_img {
+        cursor: pointer;
+        width: calc(100% / 2 - 10px);
+    }
 
 
 

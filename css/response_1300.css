@@ -40,6 +40,13 @@
     .stage_items > * {
         width: calc(100%/4 - 20px);
     }
+    .work .tabs {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .work .tabs button {
+        width: calc(100% / 3 - 14px);
+    }
 
 
 

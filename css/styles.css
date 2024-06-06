@@ -185,7 +185,7 @@ button {
     overflow: hidden;
     flex-direction: column;
 
-    min-width: 375px;
+    min-width: 390px;
     min-height: 100%;
 
     background: var(--bg);
