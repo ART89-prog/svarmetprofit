@@ -200,56 +200,72 @@ $(() => {
 
   // Инициализация превью слайдера
   const sliderThumbs = new Swiper(".slider__thumbs .swiper-container", {
-    // ищем слайдер превью по селектору
-    // задаем параметры
-    direction: "vertical", // вертикальная прокрутка
-    slidesPerView: 4, // показывать по 3 превью
-    spaceBetween: 20, // расстояние между слайдами
+    direction: "vertical", 
+    slidesPerView: 4, 
+    spaceBetween: 20, 
     navigation: {
-      // задаем кнопки навигации
-      nextEl: ".slider__next", // кнопка Next
-      prevEl: ".slider__prev" // кнопка Prev
+      nextEl: ".slider__next", 
+      prevEl: ".slider__prev" 
     },
-    freeMode: true, // при перетаскивании превью ведет себя как при скролле
+    freeMode: true, 
     breakpoints: {
-      // условия для разных размеров окна браузера
       0: {
-        // при 0px и выше
-        direction: "horizontal" // горизонтальная прокрутка
+        direction: "horizontal"
       },
-      768: {
-        // при 768px и выше
-        direction: "vertical" // вертикальная прокрутка
+      1024: {
+        direction: "vertical" 
       }
     }
   });
-  // Инициализация слайдера изображений
+
   const sliderImages = new Swiper(".slider__images .swiper-container", {
-    // ищем слайдер превью по селектору
-    // задаем параметры
-    direction: "vertical", // вертикальная прокрутка
-    slidesPerView: 1, // показывать по 1 изображению
-    spaceBetween: 20, // расстояние между слайдами
-    mousewheel: true, // можно прокручивать изображения колёсиком мыши
-    navigation: {
-      // задаем кнопки навигации
-      nextEl: ".slider__next", // кнопка Next
-      prevEl: ".slider__prev" // кнопка Prev
-    },
-    grabCursor: true, // менять иконку курсора
-    thumbs: {
-      // указываем на превью слайдер
-      swiper: sliderThumbs // указываем имя превью слайдера
+    direction: "vertical", 
+    slidesPerView: 1, 
+    spaceBetween: 20, 
+    mousewheel: true,
+
+    grabCursor: true, 
+    thumbs: {      
+      swiper: sliderThumbs
     },
     breakpoints: {
-      // условия для разных размеров окна браузера
       0: {
-        // при 0px и выше
-        direction: "horizontal" // горизонтальная прокрутка
+        loop: true,
+        direction: "horizontal", 
+        pagination: {
+          el: '.slider .swiper-pagination',
+          type: 'bullets',
+          clickable: true,
+        },
+        slidesPerView: 1, 
+        spaceBetween: 20, 
+        mousewheel: false, 
+        navigation: {
+          nextEl: ".slider__next", 
+          prevEl: ".slider__prev" 
+        },
+      },
+      480: {
+        slidesPerView: 2, 
       },
       768: {
-        // при 768px и выше
-        direction: "vertical" // вертикальная прокрутка
+        loop: true,
+        direction: "horizontal",
+        pagination: {
+          el: '.slider .swiper-pagination',
+          type: 'bullets',
+          clickable: true,
+        },
+        slidesPerView: 3,
+        spaceBetween: 20, 
+        mousewheel: false, 
+        navigation: {
+          nextEl: ".slider__next", 
+          prevEl: ".slider__prev" 
+        },
+      },
+      1024: {        
+        direction: "vertical" 
       }
     }
   });

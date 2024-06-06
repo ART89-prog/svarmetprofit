@@ -34,6 +34,12 @@
     .title {
         margin-bottom: 30px;
     }
+    .stage_items {
+        gap: 30px;
+    }
+    .stage_items > * {
+        width: calc(100%/4 - 20px);
+    }
 
 
 

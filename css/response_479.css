@@ -19,6 +19,12 @@
     .advantages_items > * {
         width: 100%;
     }
+    .stage_items > * {
+        max-width: 248px;
+    } 
+    .stage_items {
+        justify-content: center;
+    }
 
 
 

@@ -115,9 +115,6 @@
     .footer_wrap {
         flex-wrap: wrap;
     }
-    .footer_contact {
-        flex-direction: column;
-    }
     .footer_btn {
         display: none;
     }
@@ -130,7 +127,49 @@
         width: 13px;
         height: 20px;
     }
-   
+    .slider_box {
+        flex-direction: column;
+    }
+    .slider_box-info {
+        max-width: 100%;
+    }
+    .slider__col {
+        display: none;
+    }
+    .slider__images {
+        position: relative;
+    }
+    .slider__flex {
+        overflow: visible;
+    }
+    .slider_box {
+        gap: 50px;
+    }
+    .slider__next {
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    .slider__prev {
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    .slider__images {
+        padding: 0 30px;
+        width: 100%;
+    }
+    .slider .swiper-container {
+        overflow: hidden;
+    }
+    .stage_items {
+        flex-wrap: wrap;
+    }
+    .stage_items > * {
+        width: calc(100%/2 - 15px);
+    }
 
 
     

@@ -1,5 +1,9 @@
 @media print, (max-width: 767px) {
 
+    :root {
+        --font_size_title: 30px;
+    }   
+
     .footer_adress .footer_contact-title {
         display: none;
     }
@@ -118,6 +122,15 @@
     }
     header .menu {
         width: 143px;
+    }
+    .footer_contact {
+        flex-direction: column;
+    }
+    .slider .tabs {
+        margin-bottom: 20px;
+    }
+    .stage_items > * {
+        width: 100%;
     }
 
 
