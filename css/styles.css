@@ -1241,14 +1241,14 @@ footer {
 
 
 
-.tabs_container {
+.slider .tabs_container {
     max-width: 1148px;
     width: 100%;
     margin-top: 30px;
     margin-bottom: 60px;
 }
 
-.tabs {
+.slider .tabs {
     display: flex;
     margin-bottom: 30px;
     border-bottom: 1px solid #005038;
@@ -1258,7 +1258,7 @@ footer {
     flex-wrap: wrap;
 }
 
-.tabs button {
+.slider .tabs button {
     font-family: Montserrat;
     font-size: 20px;
     font-weight: 400;
@@ -1268,15 +1268,15 @@ footer {
     padding-bottom: 15px;
 }
 
-.tabs button+button {
+.slider .tabs button+button {
     margin-left: 41px;
 }
 
-.tabs button.active {
+.slider .tabs button.active {
     color: #C2CDBD;
 }
 
-.tab_content {
+.slider .tab_content {
     position: relative;
     visibility: hidden;
     overflow: hidden;
@@ -1288,11 +1288,11 @@ footer {
     font-weight: 300;
     line-height: 1.2;    
 }
-.tab_content p + p {
+.slider .tab_content p + p {
     margin-top: 20px;
 }
 
-.tab_content.active {
+.slider .tab_content.active {
     visibility: visible;
     overflow: visible;
     height: auto;
@@ -1303,7 +1303,7 @@ footer {
 
 
 
-.satge_title {
+.stage_title {
     margin-bottom: 50px;
     font-family: Montserrat;
     font-size: 30px;
@@ -1399,4 +1399,79 @@ footer {
 }
 .about_text p + p {
     margin-top: 20px;
+}
+
+
+.work .tabs_container {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.work .tabs {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    gap: 40px;
+}
+
+.work .tabs button {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: left;    
+    position: relative;
+    display: block;
+    width: calc(100%/5 - 32px);
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    padding: 31px 7px 31px 40px;
+    position: relative;
+}
+.work .tabs button:before {
+    position: absolute;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background: #005038;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.work .tabs button.active {
+    color: #C2CDBD;
+}
+
+.work .tab_content {
+    position: relative;
+    visibility: hidden;
+    overflow: hidden;
+    height: 0;
+    pointer-events: none;
+    opacity: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.work .work_img {
+    cursor: pointer;
+    width: calc(100%/6 - 25px);
+}
+
+.work .work_img img {
+    width: 100%;
+}
+
+.work .tab_content.active {
+    visibility: visible;
+    overflow: visible;
+    height: auto;
+    transition: opacity .5s linear;
+    pointer-events: auto;
+    opacity: 1;
 }
