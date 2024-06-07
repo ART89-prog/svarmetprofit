@@ -224,7 +224,6 @@ $(() => {
     slidesPerView: 1, 
     spaceBetween: 20, 
     mousewheel: true,
-
     grabCursor: true, 
     thumbs: {      
       swiper: sliderThumbs
@@ -252,13 +251,13 @@ $(() => {
       768: {
         loop: true,
         direction: "horizontal",
+        slidesPerView: 3,
+        spaceBetween: 20, 
         pagination: {
           el: '.slider .swiper-pagination',
           type: 'bullets',
           clickable: true,
         },
-        slidesPerView: 3,
-        spaceBetween: 20, 
         mousewheel: false, 
         navigation: {
           nextEl: ".slider__next", 

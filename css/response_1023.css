@@ -97,8 +97,8 @@
     }
     .service_item-title {
         font-size: 17px;
-        top: 15px;
-        left: 15px;
+        top: 25px;
+        left: 20px;
     }
     .partner_contact {
         display: none;
@@ -192,6 +192,9 @@
     }
     .contacts .map_wrap {
         height: 250px;
+    }
+    .service_item-img {
+        height: 240px;
     }
 
 

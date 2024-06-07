@@ -111,8 +111,8 @@
         grid-row-start: 5;
         grid-row-end: 6;
     }
-    .service_item img {
-        object-fit: cover;
+    .service_item-img {
+        height: 215px;
     }
     .partner {
         margin-top: 100px;
