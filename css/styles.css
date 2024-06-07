@@ -1511,3 +1511,50 @@ footer {
     display: flex;
     gap: 10px;
 }
+
+
+
+.news_items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.news_items > * {
+    width: calc(100%/3 - 20px);
+    margin-bottom: 0;
+}
+.news .new_item:hover:after {
+    display: none;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.pagination a {
+    font-family: var(--font_family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #444;
+    margin-right: 23px;
+    display: block;
+    text-decoration: none;
+    transition: all .4s;
+}
+.pagination span {
+    display: block;
+    font-family: var(--font_family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: #444;
+    margin-right: 23px;
+}
+.pagination a.active {
+    font-weight: 700;
+    color: #000;
+}
+.pagination a:hover {
+    color: #000;
+}
